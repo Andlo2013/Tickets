@@ -1,0 +1,96 @@
+﻿body {
+}
+
+.barra{   
+    height:5px;
+}
+
+.datosPlan{
+    display:none;
+}
+
+.icon{
+    width:32px;
+    height:32px;
+}
+
+.marginRow{
+    margin:0.1em;
+}
+
+.negrita{    
+    font-weight:800;
+}
+
+.ocultarXS {
+    display: none;
+}
+
+.ocultarSmall {
+    display: none;
+}
+
+.ocultarMedium {
+    display: none;
+}
+
+.ticketRed{
+    background-color: #FFCCCC;
+    color: #CC0000;
+}
+
+.ticketOrange{
+    background-color: #FFE9DD;
+    color: #FF8000;
+}
+
+.ticketGreen{
+    background-color: #DEFFFF;
+    color: #006666;
+}
+
+.subtittle{    
+    font-weight:600;
+}
+
+.tittle{
+    display:block;
+    font-size:x-large;
+    font-weight:800;
+    text-align:center;
+}
+
+
+@media (min-width: 768px) { 
+
+.datosPlan{
+    display:block;
+    margin: 1em 0;
+}
+
+.ocultarXS{
+    display:table-cell;
+}
+
+}
+
+@media (min-width: 1000px) { 
+
+.ocultarSmall{
+    display:table-cell;
+}
+
+}
+
+@media (min-width: 1200px) { 
+
+.ocultarMedium{
+    display:table-cell;
+}
+
+}
+
+
+
+
+

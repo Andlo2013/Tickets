@@ -1,0 +1,20 @@
+﻿@model IEnumerable<_Entidades.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section styles {
+   
+}
+
+<h2>Usuarios</h2>
+
+@Html.Partial("~/Views/_common/_filters.cshtml")
+
+<div id="UsuarioTable"></div>
+
+
+@section Scripts {
+    <script src="~/Scripts/_jtUsuario.js" type="text/javascript"></script>
+}

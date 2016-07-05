@@ -1,0 +1,30 @@
+﻿@model IEnumerable<TicketsMVC.Areas._CommonModel.TicketsModel>
+
+    @{
+        ViewBag.Title = "Respuestas";
+    }
+
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("Responder","Answer","Soporte", new { Area = "Cliente",id= ViewBag.TicketUUID },null)
+    </p>
+    
+
+<div id="AnswerTable"></div>
+
+<p>
+    @Html.ActionLink("Tickets", "Index", "Soporte", new { Area = "Cliente"}, null)
+</p>
+
+@section Scripts {
+    
+    <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <!-- Include one of jTable styles. -->
+    <link href="~/Scripts/jtable/themes/metro/blue/jtable.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Include jTable script file. -->
+    <script src="~/Scripts/jtable/jquery.jtable.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/_jtSoporteDET.js" type="text/javascript"></script>
+    
+}

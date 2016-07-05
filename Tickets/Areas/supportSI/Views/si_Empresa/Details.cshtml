@@ -1,0 +1,58 @@
+﻿@model _Entidades.Empresa
+
+@{
+    ViewBag.Title = "Detalle";
+}
+
+<h2>Detalle</h2>
+
+<div>
+    <h4>Empresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            RUC
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpRuc)
+        </dd>
+
+        <dt>
+            Empresa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpNom)
+        </dd>
+
+        <dt>
+           Dirección
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            Teléfono
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            Activo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstReg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Empresas", "Index")
+</p>

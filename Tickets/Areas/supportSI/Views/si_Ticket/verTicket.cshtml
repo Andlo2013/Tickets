@@ -1,0 +1,114 @@
+﻿@model _Entidades.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contrato.obsContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contrato.obsContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tecnico.nombreTecnico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tecnico.nombreTecnico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketCategoria.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketCategoria.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUsersId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUsersId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaINI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaINI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaFIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaFIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cmbPrioridadId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cmbPrioridadId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cmbEstadoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cmbEstadoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumDetalle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumDetalle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UUID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UUID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstReg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstReg)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

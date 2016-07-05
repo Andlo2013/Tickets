@@ -1,0 +1,22 @@
+﻿@model IEnumerable<_Entidades.Contrato>
+
+@{
+    ViewBag.Title = "Contratos";
+}
+
+@section styles {
+    
+}
+
+<h2>Contratos</h2>
+
+
+@Html.Partial("~/Views/_common/_filters.cshtml")
+
+<div id="ContratoTable"></div>
+
+@section Scripts {
+
+    <script src="~/Scripts/_jtContrato.js" type="text/javascript"></script>
+
+}

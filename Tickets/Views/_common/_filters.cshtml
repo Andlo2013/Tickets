@@ -1,0 +1,27 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">Filtrar:</div>
+    <div class="panel-body">
+        <form>
+            <div class="container-fluid">
+                <div class="row marginRow">
+                    <label class="col-md-1">Buscar por:</label>
+                    <div class="col-md-2">
+                        <select class="form-control" id="campoBuscar" name="campoBuscar">
+                            @foreach (_Entidades.Combo opcion in ViewBag.filtro)
+                            {
+                                <option value="@opcion.Descripcion">@opcion.Descripcion</option>
+                            }
+                        </select>
+                    </div>
+                    <label class="col-md-1">Texto:</label>
+                    <div class="col-md-2">
+                        <input class="form-control" id="textoBuscar" name="textoBuscar" maxlength="25" />
+                    </div>
+                    <div class="col-md-1">
+                        <button class="form-control btn btn-default" type="submit" id="buscar">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

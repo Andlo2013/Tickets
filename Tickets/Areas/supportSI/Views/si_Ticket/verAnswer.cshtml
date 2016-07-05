@@ -1,0 +1,87 @@
+﻿@model _Entidades.TicketsDetalle
+
+@{
+    ViewBag.Title = "Respuesta";
+}
+
+<h2>Ticket</h2>
+
+<div>
+    <h4>Respuesta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaING)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaING)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.teamViewer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.teamViewer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Minutos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Minutos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mensaje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mensaje)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.observacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.observacion)
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.File3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.File3)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Listado Tickets", "Index")
+</p>
+
